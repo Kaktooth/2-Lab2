@@ -17,7 +17,9 @@ namespace ConsoleApp54
             
             MyMatrix mymatrix = new MyMatrix(matrix);
             string str = CreateString();
+            ShowMatrix(mymatrix);
             MyMatrix mymatrix2 = new MyMatrix(str);
+            ShowMatrix(mymatrix2);
             Console.WriteLine(mymatrix.Height+" " +mymatrix.Width + " " + mymatrix2.Height + " " + mymatrix2.Width);
             MyMatrix mymatrix3 = mymatrix * mymatrix2;
             ShowMatrix(mymatrix3.GetMatrix());
@@ -196,7 +198,7 @@ namespace ConsoleApp54
 
                 Parallel.For(0, a.GetWidth(), j =>
                 {
-                  array[i,j] = a[i, j] * b[i, j];
+                  array[i,j] = a[i, j] + b[i, j];
 
                 });
                 Console.WriteLine();
