@@ -191,6 +191,7 @@ namespace ConsoleApp54
             if (a.GetHeight() != b.GetHeight() || a.GetWidth() != b.GetWidth())
             {
                 Console.WriteLine("Error: length of matrix not same");
+                break;
             }
             double[,] array = new double[a.GetHeight(), a.GetWidth()];
             Parallel.For(0, a.GetHeight(), i =>
@@ -211,6 +212,7 @@ namespace ConsoleApp54
             if (a.GetHeight() != b.GetHeight()||a.GetWidth()!=b.GetWidth())
             {
                 Console.WriteLine("Error: length of matrix not same");
+                break;
             }
             double[,] array = new double[a.GetHeight(), a.GetWidth()];
            
